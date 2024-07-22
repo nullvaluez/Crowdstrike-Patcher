@@ -1,4 +1,4 @@
-# Bootable USB with Windows PE to Run fix_crowdstrike.bat
+# Crowdstrike BSOD Bootable USB Drive Fix
 
 This guide will help you create a bootable USB drive with Windows PE that automatically runs a batch script (`fix.bat`) to address the CrowdStrike issue.
 
