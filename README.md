@@ -8,6 +8,7 @@ This guide will help you create a bootable USB drive with Windows PE that automa
 2. Windows Assessment and Deployment Kit (ADK) and Windows PE add-on.
 3. `fix.bat` script.
 4. `createUsb.ps1` script.
+5. A device not affected by Crowdstrike BSOD
 
 ## Steps
 
@@ -37,5 +38,7 @@ Save the following PowerShell script as `createUsb.ps1` on your local machine (n
 ### Summary:
 1. **fix.bat**: Should be placed in the root of the USB drive.
 2. **createUsb.ps1**: Should be saved and run from your local machine to create the bootable USB drive.
+3. **startnet.cmd**: Automatically created by the PowerShell script and added to the Windows PE environment to run `fix.bat` from the USB root.
+
 
 This setup ensures that the USB drive is prepared correctly and that the `fix.bat` script runs automatically when the system boots from the USB drive.
