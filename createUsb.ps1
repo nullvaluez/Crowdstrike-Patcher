@@ -21,7 +21,7 @@ $startnetContent = @"
 @echo off
 wpeinit
 for %%i in (C D E F G H I J K L M N O P Q R S T U V W X Y Z) do if exist %%i:\fix.bat set usbDrive=%%i:
-%usbDrive%\fix_crowdstrike.bat
+%usbDrive%\fix.bat
 "@
 Set-Content -Path "C:\WinPE_amd64\mount\Windows\System32\startnet.cmd" -Value $startnetContent
 
